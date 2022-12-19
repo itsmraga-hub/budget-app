@@ -1,4 +1,5 @@
 class Expense < ApplicationRecord
-  belongs_to :user
   has_many :budget_categories
+
+  belongs_to :author, class_name: 'User'
 end
