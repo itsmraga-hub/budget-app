@@ -98,10 +98,10 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[Delete added items]**
-  - Delete and update items in the app.
-- **[Add Recipes, Foods and Ingredients]**
-  - Interact with recipes, foods and recipe foods.
+- **[See overview of money spent]**
+  - See the money spent on each category.
+- **[Add Transactions and categories]**
+  - Introduce new transactions associated with a category.
 - **[Sign in and sign up]**
   - User authentication. So the data is private to user.
 
