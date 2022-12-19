@@ -1,7 +1,6 @@
 <div id="<%= dom_id budget_category %>">
   <p>
-    <strong>Name:</strong>
-    <%= budget_category.name %>
+    <%= link_to budget_category.name, user_budget_category_path(current_user, budget_category) %>
   </p>
 
   <p>
