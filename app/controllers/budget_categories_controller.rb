@@ -3,12 +3,13 @@ class BudgetCategoriesController < ApplicationController
 
   # GET /budget_categories or /budget_categories.json
   def index
-    current_user = User.find(params[:user_id])
     @budget_categories = BudgetCategory.all.where(author_id: current_user.id)
   end
 
   # GET /budget_categories/1 or /budget_categories/1.json
-  def show; end
+  def show
+    @budget_category = BudgetCategory.includes(:expenses).find(params[:id])
+  end
 
   # GET /budget_categories/new
   def new
@@ -21,12 +22,12 @@ class BudgetCategoriesController < ApplicationController
   # POST /budget_categories or /budget_categories.json
   def create
     # @budget_category = current_user.budget_categories.new(budget_category_params)
-    @budget_category = BudgetCategory.new(author_id: current_user.id, **budget_category_params)
+    @budget_category = BudgetCategory.new(author: current_user, **budget_category_params)
 
     respond_to do |format|
       if @budget_category.save
         format.html do
-          redirect_to user_budget_categories_path, notice: 'Budget category was successfully created.'
+          redirect_to budget_categories_path, notice: 'Budget category was successfully created.'
         end
         format.json { render :show, status: :created, location: @budget_category }
         # redirect_to user_budget_categories_path
@@ -56,7 +57,7 @@ class BudgetCategoriesController < ApplicationController
     @budget_category.destroy
 
     respond_to do |format|
-      format.html { redirect_to user_budget_categories_url, notice: 'Budget category was successfully destroyed.' }
+      format.html { redirect_to budget_categories_url, notice: 'Budget category was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
