@@ -8,7 +8,11 @@ Rails.application.routes.draw do
 
   # devise_for :users
 
-  resources :users
+  resources :users do
+    resources :budget_categories do
+      resources :expenses
+    end
+  end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
