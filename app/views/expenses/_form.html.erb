@@ -22,6 +22,11 @@
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.label :category, style: "display: block" %>
+     <%= form.collection_check_boxes :budget_category_ids, BudgetCategory.all, :id, :name, { hide_label: true } %>
+  </div>
+
+  <div>
+    <%= form.submit 'Save' %>
   </div>
 <% end %>

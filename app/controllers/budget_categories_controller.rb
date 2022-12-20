@@ -1,4 +1,5 @@
 class BudgetCategoriesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_budget_category, only: %i[show edit update destroy]
 
   # GET /budget_categories or /budget_categories.json

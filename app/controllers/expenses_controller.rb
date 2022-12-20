@@ -1,14 +1,18 @@
 class ExpensesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_expense, only: %i[show edit update destroy]
 
   # GET /expenses or /expenses.json
   def index
     @budget_category = BudgetCategory.find(params[:budget_category_id])
-    @expenses = Expense.all
+    @expenses = @budget_category.expenses.order(created_at: :desc)
+    @total = @expenses.sum(:amount)
   end
 
   # GET /expenses/1 or /expenses/1.json
-  def show; end
+  def show
+    @budget_category = BudgetCategory.find(params[:budget_category_id])
+  end
 
   # GET /expenses/new
   def new
@@ -70,6 +74,6 @@ class ExpensesController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def expense_params
-    params.require(:expense).permit(:name, :amount)
+    params.require(:expense).permit(:name, :amount, budget_category_ids: [])
   end
 end
