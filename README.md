@@ -61,7 +61,7 @@ After you're finished please remove all the comments and instructions!
 
 > A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
-**[Recipe app]** is a recipe manager website.
+**[Budget app]** is a mobile web application where you can manage your budget.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -90,6 +90,11 @@ After you're finished please remove all the comments and instructions!
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
+</details>
+
+<details>
+<summary>Images</summary>
+[Screenshot]()
 </details>
 
 <!-- Features -->
