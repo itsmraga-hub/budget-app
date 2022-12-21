@@ -23,7 +23,7 @@
 
   <div>
     <%= form.label :category, style: "display: block" %>
-     <%= form.collection_check_boxes :budget_category_ids, BudgetCategory.all, :id, :name, { hide_label: true } %>
+     <%= form.collection_check_boxes :budget_category_ids, BudgetCategory.all.where(author: current_user), :id, :name, { hide_label: true } %>
   </div>
 
   <div>
