@@ -14,14 +14,14 @@
   </head>
 
   <body>
-    <header>
-      <% if user_signed_in? %>
+    <% if user_signed_in? %>
+      <header>
         <p><b><%= current_user.name %></b></p>
         <div>
           <%= button_to 'Log out', destroy_user_session_path, method: :delete %>
         </div>
-      <% end %>
-    </header>
+      </header>
+    <% end %>
     <main>
       <%= yield %>
     </main>
