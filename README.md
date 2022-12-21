@@ -94,7 +94,8 @@ After you're finished please remove all the comments and instructions!
 
 <details>
 <summary>Images</summary>
-[Screenshot]()
+<li>![Screenshot](./image-1.png)</li>
+<li>![Screenshot](./image-2.png)</li>
 </details>
 
 <!-- Features -->
