@@ -1,13 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
-
-  # devise_scope :user do
-    # Redirects signing out users back to sign-in
-    # root to: "devise/sessions#new"
-    # root to: 'splash_screen#index'
-  # end
-
-  # devise_for :users
+  devise_for :users, controllers: { registrations: "registrations" }
 
   resources :users
 
