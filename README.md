@@ -119,7 +119,8 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link coming soon](https://yourdeployedapplicationlink.com)
+- [Live Link](https://cashverse-raga.onrender.com/)
+- [Loom video](https://www.loom.com/share/fa994de927394858b0a81204dafdb1c4)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
