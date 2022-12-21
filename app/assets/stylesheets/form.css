@@ -110,3 +110,9 @@ a {
 input[type="checkbox"] {
   display: inline;
 }
+
+.devise-forms .header-details {
+  width: 100%;
+  font-size: 1em;
+  gap: 5em;
+}
