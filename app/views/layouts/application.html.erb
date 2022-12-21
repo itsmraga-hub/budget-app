@@ -14,12 +14,12 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
     <header>
       <% if user_signed_in? %>
-        <p>Welcome, <b><%= current_user.name %></b></p>
-        <%= button_to 'Log out', destroy_user_session_path, method: :delete %>
+        <p><b><%= current_user.name %></b></p>
+        <div>
+          <%= button_to 'Log out', destroy_user_session_path, method: :delete %>
+        </div>
       <% end %>
     </header>
     <main>
