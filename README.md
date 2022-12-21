@@ -107,9 +107,9 @@ After you're finished please remove all the comments and instructions!
 - **[See overview of money spent]**
   - See the money spent on each category.
 - **[Add Transactions and categories]**
-  - Introduce new transactions associated with a category.
+  - Introduce new transactions associated with a category or multiple categories.
 - **[Sign in and sign up]**
-  - User authentication. So the data is private to user.
+  - User authentication. Such that the data is private to user currently logged in.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -212,7 +212,6 @@ Example:
 
 - [ ] **[List Transactions]**
 - [ ] **[Transaction Details]**
-- [ ] **[Inventory Shopping List]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -244,6 +243,8 @@ If you like this project...
 
 I would like to thank...
 
+Original design idea by [Gregoire Vella](https://www.behance.net/gregoirevella). All credits to him.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
@@ -252,9 +253,9 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[Did you use scaffold to generate your models, views and controllers or did you build them from scratch]**
 
-  - [Answer_1]
+  - [Used a combination of both for different models]
 
 - **[Question_2]**
 
